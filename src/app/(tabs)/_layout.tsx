@@ -5,9 +5,9 @@ import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { triggerHaptic } from '../../context/GymcatContext';
 
 const TAB_ITEMS = [
-  { name: 'index', href: '/', label: 'Today', icon: '🐾' },
-  { name: 'days', href: '/days', label: 'Days', icon: '📅' },
-  { name: 'card', href: '/card', label: 'Card', icon: '🏆' },
+  { name: 'index', href: '/', label: 'Today' },
+  { name: 'days', href: '/days', label: 'Days' },
+  { name: 'card', href: '/card', label: 'Card' },
 ] as const;
 
 export default function TabsLayout() {
@@ -16,7 +16,7 @@ export default function TabsLayout() {
   return (
     <SafeAreaView style={styles.safeArea} edges={['top', 'left', 'right']}>
       <View style={styles.header}>
-        <Text style={styles.brand}>Gymcat</Text>
+        <Text style={styles.brand}>GYMCAT</Text>
       </View>
 
       <View style={styles.content}>
@@ -24,10 +24,11 @@ export default function TabsLayout() {
           screenOptions={{
             headerShown: false,
             animation: 'none',
-            sceneStyle: { backgroundColor: '#F7F5FA' },
+            sceneStyle: { backgroundColor: '#0A1128' },
           }}
           tabBar={({ state }) => (
             <View
+              accessibilityRole="tablist"
               style={[
                 styles.tabBar,
                 { marginBottom: Math.max(14, insets.bottom + 8) },
@@ -48,7 +49,6 @@ export default function TabsLayout() {
                       }
                     }}
                   >
-                    <Text style={styles.tabIcon}>{item.icon}</Text>
                     <Text
                       style={[
                         styles.tabLabel,
@@ -75,21 +75,21 @@ export default function TabsLayout() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#F7F5FA',
+    backgroundColor: '#0A1128',
   },
   header: {
     paddingHorizontal: 24,
     paddingTop: 10,
-    paddingBottom: 6,
+    paddingBottom: 4,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   brand: {
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: '800',
-    color: '#231B2E',
-    letterSpacing: -0.4,
+    color: '#FF7E79',
+    letterSpacing: 2,
   },
   content: {
     flex: 1,
@@ -97,38 +97,29 @@ const styles = StyleSheet.create({
   tabBar: {
     flexDirection: 'row',
     marginHorizontal: 20,
-    padding: 6,
-    borderRadius: 24,
-    backgroundColor: '#FFFFFF',
+    padding: 5,
+    borderRadius: 18,
+    backgroundColor: '#121D3D',
     borderWidth: 1,
-    borderColor: '#ECE5F7',
-    shadowColor: '#2D2638',
-    shadowOpacity: 0.06,
-    shadowRadius: 12,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 3,
+    borderColor: '#253666',
   },
   tabButton: {
     flex: 1,
-    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 6,
-    paddingVertical: 12,
-    borderRadius: 18,
+    paddingVertical: 11,
+    borderRadius: 13,
   },
   tabButtonActive: {
-    backgroundColor: '#231B2E',
-  },
-  tabIcon: {
-    fontSize: 15,
+    backgroundColor: '#FF7E79',
   },
   tabLabel: {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '700',
-    color: '#6A6177',
+    color: '#94A3B8',
+    letterSpacing: 0.4,
   },
   tabLabelActive: {
-    color: '#FFFFFF',
+    color: '#0A1128',
   },
 });

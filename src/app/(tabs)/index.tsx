@@ -5,7 +5,6 @@ import { useGymcat } from '../../context/GymcatContext';
 export default function TodayRoute() {
   const {
     isCheckedInToday,
-    summary,
     todayLabel,
     handleCheckInToday,
     handleUndoToday,
@@ -14,8 +13,6 @@ export default function TodayRoute() {
   return (
     <TodayScreen
       isCheckedInToday={isCheckedInToday}
-      stage={summary.stageMeta.stage}
-      stageName={summary.stageMeta.name}
       todayLabel={todayLabel}
       onCheckInToday={handleCheckInToday}
       onUndoToday={handleUndoToday}

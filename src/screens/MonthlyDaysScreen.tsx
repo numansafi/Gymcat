@@ -128,27 +128,22 @@ const styles = StyleSheet.create({
     paddingBottom: 32,
   },
   monthTitle: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: '800',
-    color: '#231B2E',
+    color: '#F8FAFC',
   },
   helperText: {
-    fontSize: 14,
-    color: '#6A6177',
+    fontSize: 13,
+    color: '#94A3B8',
     marginTop: 4,
     marginBottom: 20,
   },
   card: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 28,
+    backgroundColor: '#121D3D',
+    borderRadius: 24,
     padding: 16,
     borderWidth: 1.5,
-    borderColor: '#ECE5F7',
-    shadowColor: '#2D2638',
-    shadowOpacity: 0.05,
-    shadowRadius: 14,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 2,
+    borderColor: '#253666',
   },
   weekdayRow: {
     flexDirection: 'row',
@@ -157,9 +152,9 @@ const styles = StyleSheet.create({
   weekdayLabel: {
     width: '14.2857%',
     textAlign: 'center',
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '700',
-    color: '#9187A1',
+    color: '#94A3B8',
     textTransform: 'uppercase',
   },
   grid: {
@@ -176,15 +171,15 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 14,
+    borderRadius: 12,
     padding: 2,
   },
   dayCellChecked: {
-    backgroundColor: '#F3EEFF',
+    backgroundColor: 'rgba(255, 126, 121, 0.18)',
   },
   dayCellToday: {
-    borderWidth: 2,
-    borderColor: '#8B7CF6',
+    borderWidth: 1.5,
+    borderColor: '#FF7E79',
   },
   dayCellFuture: {
     opacity: 0.35,
@@ -195,17 +190,17 @@ const styles = StyleSheet.create({
   dayNumber: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#8D849B',
+    color: '#CBD5E1',
   },
   dayNumberToday: {
-    color: '#231B2E',
+    color: '#FF7E79',
     fontWeight: '800',
   },
   dayNumberFuture: {
-    color: '#B5ADC2',
+    color: '#5B6B8F',
   },
   pawText: {
-    fontSize: 20,
+    fontSize: 18,
   },
   legendRow: {
     flexDirection: 'row',
@@ -219,17 +214,17 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   legendPaw: {
-    fontSize: 16,
+    fontSize: 15,
   },
   legendRestDot: {
-    width: 12,
-    height: 12,
-    borderRadius: 6,
-    backgroundColor: '#D8D1E3',
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: '#253666',
   },
   legendText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#6A6177',
+    color: '#94A3B8',
   },
 });
