@@ -8,12 +8,9 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import { CatSilhouette } from '../components/CatSilhouette';
-import { CatStage } from '../types/gymcat';
 
 interface TodayScreenProps {
   isCheckedInToday: boolean;
-  stage: CatStage;
-  stageName: string;
   todayLabel: string;
   onCheckInToday: () => void;
   onUndoToday: () => void;
@@ -94,6 +91,7 @@ export function TodayScreen({
         <Pressable
           accessibilityRole="button"
           accessibilityState={{ selected: isRestActive }}
+          hitSlop={8}
           style={({ pressed }) => [
             styles.restButton,
             isRestActive && styles.restButtonActive,

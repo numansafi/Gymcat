@@ -87,6 +87,7 @@ export function MonthCardScreen({ summary }: MonthCardScreenProps) {
       </View>
 
       <Pressable
+        accessibilityRole="button"
         style={({ pressed }) => [
           styles.shareButton,
           pressed && styles.shareButtonPressed,
