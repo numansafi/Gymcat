@@ -7,7 +7,6 @@ import Animated, {
   useAnimatedStyle,
   useReducedMotion,
   useSharedValue,
-  withDelay,
   withTiming,
 } from 'react-native-reanimated';
 
@@ -22,7 +21,6 @@ interface ParticleConfig {
   targetY: number;
   rotateDeg: number;
   size: number;
-  delay: number;
 }
 
 const COLORS = ['#F472B6', '#8B7CF6', '#FBBF24', '#10B981', '#38BDF8', '#FB7185'];
@@ -94,7 +92,6 @@ export function ConfettiBurst({ burstKey }: ConfettiBurstProps) {
         targetY: Math.sin(angle) * distance - 50 + (index % 4) * 28,
         rotateDeg: (index % 2 === 0 ? 1 : -1) * (240 + (index % 4) * 90),
         size: 8 + (index % 3) * 3,
-        delay: (index % 4) * 18,
       };
     });
   }, []);
@@ -102,13 +99,10 @@ export function ConfettiBurst({ burstKey }: ConfettiBurstProps) {
   useEffect(() => {
     if (burstKey === 0 || reducedMotion) return;
     progress.value = 0;
-    progress.value = withDelay(
-      0,
-      withTiming(1, {
-        duration: 820,
-        easing: Easing.out(Easing.cubic),
-      }),
-    );
+    progress.value = withTiming(1, {
+      duration: 820,
+      easing: Easing.out(Easing.cubic),
+    });
   }, [burstKey, progress, reducedMotion]);
 
   if (burstKey === 0 || reducedMotion) {
