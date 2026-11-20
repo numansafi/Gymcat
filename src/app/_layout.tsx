@@ -1,4 +1,4 @@
-import { Stack } from 'expo-router';
+import { Stack, usePathname } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -7,12 +7,14 @@ import { GymcatProvider, useGymcat } from '../context/GymcatContext';
 
 function RootShell() {
   const { isCheckedInToday } = useGymcat();
+  const pathname = usePathname();
+  const isTodayPage = pathname === '/';
 
   return (
     <>
       <StatusBar style="light" />
       <Stack screenOptions={{ headerShown: false }} />
-      <ConfettiBurst active={isCheckedInToday} />
+      <ConfettiBurst active={isCheckedInToday && isTodayPage} />
     </>
   );
 }
