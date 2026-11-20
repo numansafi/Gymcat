@@ -6,13 +6,13 @@ import { ConfettiBurst } from '../components/ConfettiBurst';
 import { GymcatProvider, useGymcat } from '../context/GymcatContext';
 
 function RootShell() {
-  const { burstKey } = useGymcat();
+  const { isCheckedInToday } = useGymcat();
 
   return (
     <>
       <StatusBar style="light" />
       <Stack screenOptions={{ headerShown: false }} />
-      <ConfettiBurst burstKey={burstKey} />
+      <ConfettiBurst active={isCheckedInToday} />
     </>
   );
 }

@@ -134,16 +134,16 @@ const styles = StyleSheet.create({
   },
   helperText: {
     fontSize: 13,
-    color: '#94A3B8',
+    color: '#A5B4D4',
     marginTop: 4,
     marginBottom: 20,
   },
   card: {
-    backgroundColor: '#121D3D',
+    backgroundColor: '#162244',
     borderRadius: 24,
     padding: 16,
     borderWidth: 1.5,
-    borderColor: '#253666',
+    borderColor: '#2A3A68',
   },
   weekdayRow: {
     flexDirection: 'row',
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 11,
     fontWeight: '700',
-    color: '#94A3B8',
+    color: '#A5B4D4',
     textTransform: 'uppercase',
   },
   grid: {
@@ -175,11 +175,11 @@ const styles = StyleSheet.create({
     padding: 2,
   },
   dayCellChecked: {
-    backgroundColor: 'rgba(255, 126, 121, 0.18)',
+    backgroundColor: 'rgba(216, 180, 254, 0.20)',
   },
   dayCellToday: {
     borderWidth: 1.5,
-    borderColor: '#FF7E79',
+    borderColor: '#D8B4FE',
   },
   dayCellFuture: {
     opacity: 0.35,
@@ -190,14 +190,14 @@ const styles = StyleSheet.create({
   dayNumber: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#CBD5E1',
+    color: '#D3DCF0',
   },
   dayNumberToday: {
-    color: '#FF7E79',
+    color: '#D8B4FE',
     fontWeight: '800',
   },
   dayNumberFuture: {
-    color: '#5B6B8F',
+    color: '#63739B',
   },
   pawText: {
     fontSize: 18,
@@ -220,11 +220,11 @@ const styles = StyleSheet.create({
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: '#253666',
+    backgroundColor: '#2A3A68',
   },
   legendText: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#94A3B8',
+    color: '#A5B4D4',
   },
 });
