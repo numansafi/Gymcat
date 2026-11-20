@@ -109,12 +109,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   card: {
-    backgroundColor: '#121D3D',
+    backgroundColor: '#162244',
     borderRadius: 28,
     padding: 24,
     alignItems: 'center',
     borderWidth: 1.5,
-    borderColor: '#253666',
+    borderColor: '#2A3A68',
   },
   cardHeader: {
     alignItems: 'center',
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: 1.2,
     textTransform: 'uppercase',
-    color: '#94A3B8',
+    color: '#A5B4D4',
   },
   monthLabel: {
     fontSize: 22,
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   },
   stageDescription: {
     fontSize: 14,
-    color: '#94A3B8',
+    color: '#A5B4D4',
     textAlign: 'center',
     marginTop: 4,
     lineHeight: 20,
@@ -166,9 +166,9 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 18,
     borderRadius: 18,
-    backgroundColor: '#19274D',
+    backgroundColor: '#1E2D56',
     borderWidth: 1,
-    borderColor: '#253666',
+    borderColor: '#2A3A68',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -176,12 +176,12 @@ const styles = StyleSheet.create({
   streakLabel: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#CBD5E1',
+    color: '#D3DCF0',
   },
   streakValue: {
     fontSize: 20,
     fontWeight: '800',
-    color: '#FF7E79',
+    color: '#FFC2C7',
   },
   statsRow: {
     flexDirection: 'row',
@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
   },
   statBox: {
     flex: 1,
-    backgroundColor: '#19274D',
+    backgroundColor: '#1E2D56',
     borderRadius: 16,
     paddingVertical: 14,
     alignItems: 'center',
@@ -204,12 +204,12 @@ const styles = StyleSheet.create({
   statLabel: {
     fontSize: 12,
     fontWeight: '600',
-    color: '#94A3B8',
+    color: '#A5B4D4',
     marginTop: 2,
   },
   shareButton: {
     marginTop: 18,
-    backgroundColor: '#FF7E79',
+    backgroundColor: '#FFC2C7',
     paddingVertical: 16,
     borderRadius: 16,
     alignItems: 'center',
@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
     opacity: 0.9,
   },
   shareButtonText: {
-    color: '#0A1128',
+    color: '#101935',
     fontSize: 16,
     fontWeight: '800',
   },

@@ -24,7 +24,7 @@ export default function TabsLayout() {
           screenOptions={{
             headerShown: false,
             animation: 'none',
-            sceneStyle: { backgroundColor: '#0A1128' },
+            sceneStyle: { backgroundColor: '#101935' },
           }}
           tabBar={({ state }) => (
             <View
@@ -75,7 +75,7 @@ export default function TabsLayout() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#0A1128',
+    backgroundColor: '#101935',
   },
   header: {
     paddingHorizontal: 24,
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   brand: {
     fontSize: 16,
     fontWeight: '800',
-    color: '#FF7E79',
+    color: '#FFC2C7',
     letterSpacing: 2,
   },
   content: {
@@ -99,9 +99,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     padding: 5,
     borderRadius: 18,
-    backgroundColor: '#121D3D',
+    backgroundColor: '#162244',
     borderWidth: 1,
-    borderColor: '#253666',
+    borderColor: '#2A3A68',
   },
   tabButton: {
     flex: 1,
@@ -111,15 +111,15 @@ const styles = StyleSheet.create({
     borderRadius: 13,
   },
   tabButtonActive: {
-    backgroundColor: '#FF7E79',
+    backgroundColor: '#FFC2C7',
   },
   tabLabel: {
     fontSize: 13,
     fontWeight: '700',
-    color: '#94A3B8',
+    color: '#A5B4D4',
     letterSpacing: 0.4,
   },
   tabLabelActive: {
-    color: '#0A1128',
+    color: '#101935',
   },
 });
