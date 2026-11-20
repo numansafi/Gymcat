@@ -23,7 +23,7 @@ interface ParticleConfig {
   size: number;
 }
 
-const COLORS = ['#F472B6', '#8B7CF6', '#FBBF24', '#10B981', '#38BDF8', '#FB7185'];
+const COLORS = ['#FF7E79', '#FCA5A5', '#FDE68A', '#93C5FD', '#F8FAFC', '#FB7185'];
 const PARTICLE_COUNT = 26;
 
 interface ConfettiParticleProps {

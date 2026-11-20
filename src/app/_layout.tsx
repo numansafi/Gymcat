@@ -10,7 +10,7 @@ function RootShell() {
 
   return (
     <>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
       <Stack screenOptions={{ headerShown: false }} />
       <ConfettiBurst burstKey={burstKey} />
     </>
