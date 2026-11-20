@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 1.8,
-    color: '#FFC2C7',
+    color: '#D8B4FE',
   },
   actions: {
     width: '100%',
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
   },
   primaryButton: {
     width: '100%',
-    backgroundColor: '#FFC2C7',
+    backgroundColor: '#D8B4FE',
     paddingVertical: 18,
     paddingHorizontal: 20,
     borderRadius: 16,
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   restButtonActive: {
-    borderColor: '#FFC2C7',
+    borderColor: '#D8B4FE',
   },
   restButtonText: {
     color: '#A5B4D4',
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
   },
   restButtonTextActive: {
-    color: '#FFC2C7',
+    color: '#D8B4FE',
   },
   buttonPressed: {
     transform: [{ scale: 0.97 }],

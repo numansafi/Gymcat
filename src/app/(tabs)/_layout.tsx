@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   brand: {
     fontSize: 16,
     fontWeight: '800',
-    color: '#FFC2C7',
+    color: '#D8B4FE',
     letterSpacing: 2,
   },
   content: {
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     borderRadius: 13,
   },
   tabButtonActive: {
-    backgroundColor: '#FFC2C7',
+    backgroundColor: '#D8B4FE',
   },
   tabLabel: {
     fontSize: 13,

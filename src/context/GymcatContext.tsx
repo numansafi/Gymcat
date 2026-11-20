@@ -18,7 +18,6 @@ interface GymcatContextValue {
   todayLabel: string;
   isCheckedInToday: boolean;
   summary: MonthlySummary;
-  burstKey: number;
   handleCheckInToday: () => void;
   handleUndoToday: () => void;
   handleToggleDate: (dateKey: string) => void;
@@ -31,7 +30,7 @@ export function triggerHaptic(type: 'success' | 'selection'): void {
   if (Platform.OS === 'web') return;
   const promise =
     type === 'success'
-      ? Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+      ? Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
       : Haptics.selectionAsync();
   void promise.catch(() => {});
 }
@@ -39,7 +38,6 @@ export function triggerHaptic(type: 'success' | 'selection'): void {
 export function GymcatProvider({ children }: { children: React.ReactNode }) {
   const [checkins, setCheckins] = useState<string[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [burstKey, setBurstKey] = useState(0);
   const [today, setToday] = useState(() => new Date());
 
   const todayKey = useMemo(() => formatDateKey(today), [today]);
@@ -92,7 +90,6 @@ export function GymcatProvider({ children }: { children: React.ReactNode }) {
     if (!isLoaded || isCheckedInToday) return;
     const next = toggleCheckinDate(checkins, todayKey);
     updateCheckins(next);
-    setBurstKey((prev) => prev + 1);
     triggerHaptic('success');
   };
 
@@ -109,7 +106,6 @@ export function GymcatProvider({ children }: { children: React.ReactNode }) {
     const next = toggleCheckinDate(checkins, dateKey);
     updateCheckins(next);
     if (willAdd && dateKey === todayKey) {
-      setBurstKey((prev) => prev + 1);
       triggerHaptic('success');
     } else {
       triggerHaptic('selection');
@@ -125,14 +121,13 @@ export function GymcatProvider({ children }: { children: React.ReactNode }) {
       todayLabel,
       isCheckedInToday,
       summary,
-      burstKey,
       handleCheckInToday,
       handleUndoToday,
       handleToggleDate,
       triggerHaptic,
     }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [checkins, isLoaded, today, todayKey, todayLabel, isCheckedInToday, summary, burstKey],
+    [checkins, isLoaded, today, todayKey, todayLabel, isCheckedInToday, summary],
   );
 
   return <GymcatContext.Provider value={value}>{children}</GymcatContext.Provider>;

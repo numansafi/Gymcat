@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
   streakValue: {
     fontSize: 20,
     fontWeight: '800',
-    color: '#FFC2C7',
+    color: '#D8B4FE',
   },
   statsRow: {
     flexDirection: 'row',
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
   },
   shareButton: {
     marginTop: 18,
-    backgroundColor: '#FFC2C7',
+    backgroundColor: '#D8B4FE',
     paddingVertical: 16,
     borderRadius: 16,
     alignItems: 'center',

@@ -7,8 +7,8 @@ interface CatSilhouetteProps {
 }
 
 export function CatSilhouette({ active = false, size = 196 }: CatSilhouetteProps) {
-  const stroke = '#FFC2C7';
-  const fill = active ? 'rgba(255, 194, 199, 0.20)' : 'rgba(255, 194, 199, 0.05)';
+  const stroke = '#D8B4FE';
+  const fill = active ? 'rgba(216, 180, 254, 0.20)' : 'rgba(216, 180, 254, 0.05)';
 
   return (
     <Svg width={size} height={size} viewBox="0 0 200 220">

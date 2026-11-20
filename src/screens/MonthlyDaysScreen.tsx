@@ -175,11 +175,11 @@ const styles = StyleSheet.create({
     padding: 2,
   },
   dayCellChecked: {
-    backgroundColor: 'rgba(255, 194, 199, 0.20)',
+    backgroundColor: 'rgba(216, 180, 254, 0.20)',
   },
   dayCellToday: {
     borderWidth: 1.5,
-    borderColor: '#FFC2C7',
+    borderColor: '#D8B4FE',
   },
   dayCellFuture: {
     opacity: 0.35,
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
     color: '#D3DCF0',
   },
   dayNumberToday: {
-    color: '#FFC2C7',
+    color: '#D8B4FE',
     fontWeight: '800',
   },
   dayNumberFuture: {
