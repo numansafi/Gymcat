@@ -1,7 +1,5 @@
 export type CatStage = 1 | 2 | 3 | 4;
 
-export type TabKey = 'Today' | 'Days' | 'Card';
-
 export interface CatStageMeta {
   stage: CatStage;
   name: string;
